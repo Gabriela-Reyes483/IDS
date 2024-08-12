@@ -1,0 +1,64 @@
+# Algoritmo de número primo
+INICIO.
+1.Definir las variables:
+	-> n, i, contador como números enteros.
+
+2. Solicitar el número al usuario
+	-> El usuario ingresa el número y se lo asignamos a n.	
+
+3. Inicializar el contador:
+	-> Establecemos el contador en 0.
+
+4. Iterar desde 1 hasta el número ingresado "n"
+	-> para cada valor "i" de 1 hasta n verificar
+		-->(Si el "n" es divisible entre el valor "i" ) entonces incrementar el contador en 1. [contador +1]
+
+5. Validar si el número ingresado es primo.
+	-> Si el contador = 2, entonces quiere decir que el número 
+		solo fue divisible por 1 y "n" mismo y es primo
+	->Si el contador es diferente a 2, entonces el número NO es primo.
+ 
+6. Mostrar el resultado en pantalla.
+FIN
+
+
+# Algoritmo número par/impar.
+INICIO
+1. Definir variables:
+	-> nums, como un arreglo de tamaño 10 (para almacenar los 10 números ingresados)
+	-> i, como un número entero (Contador para iterar del 1 al 10)
+
+2. Solicitar números al usuario:
+	-> Para cada valor de i del 1 hasta el 10
+		->Solicitar número al usuario
+		->Asignar número en la posición nums[i]
+
+3. Determinar si cada número es par o impar:
+	->Para cada valor de i desde el 1 hasta el 10
+		->Verificar si nums[i] es divisible entre 2 entonces el número es par
+		->Si no es divisible el número es impar.
+FIN 
+
+
+# Algoritmo para invertir número.
+INICIO
+1. Definir las variables:
+	->num, invertido y digito como enteros: 
+	 num: el número a invertir que captura el usuario.
+	 invertido: el resultado, numero invertido
+	 digito: variable auxiliar para obtener cada digito para cambiarlo de posición.
+
+2. Solicitar número al usuario:
+	-> El usuario ingresa el número y se lo asignamos a num.	
+
+3. Inicializar variable "invertido = 0"
+
+4. Invertir el número:
+	->Mientras el "num > 0":
+		-> Obtener el último digito realizando la operación modulo o residuo con 10 (num mod 10) y almacenarlo en el dígito. 
+		-> Agregamos el digito a la variable invertido en su posición correcta (es decir, invertido * 10 + digito)		
+		->Eliminamos el último digito del número (Trunc(num / 10))
+
+5. Mostramos el resultado:
+	-> Se muestra en pantalla el número "invertido".
+	
